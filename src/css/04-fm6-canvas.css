@@ -1,0 +1,17 @@
+/* ===== FM6 canvas ===== */
+#world{will-change:auto}
+#world.moving{will-change:transform}
+#frames{z-index:0}#edges{z-index:1}#elabels{z-index:2}#cards{z-index:3}
+#frames,#elabels,#cards{position:absolute;left:0;top:0}
+.frame.flonly{background:none!important;border-color:transparent!important;box-shadow:none!important;outline:0!important}
+.frame.flonly::before,.frame.flonly::after{display:none!important}
+.ovwarn{position:absolute;z-index:16;right:16px;top:146px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;max-width:min(400px,calc(100% - 32px));background:var(--card);color:var(--ink);border:var(--card-bw,1.5px) solid var(--card-border,var(--line));border-radius:var(--r-lg);padding:8px 10px 8px 12px;box-shadow:var(--shadow);font-size:.9rem;line-height:1.35}
+.ovwarn[hidden]{display:none}
+.ovwarn>.ic{flex:none;width:20px;height:20px}
+.ovwarn span{flex:1 1 200px;min-width:0}
+.ovwarn .btn{flex:none}
+@media (max-width:760px){.ovwarn{top:auto;bottom:140px;flex-wrap:wrap}.ovwarn span{flex-basis:calc(100% - 34px)}}
+.elabel .ynm{display:inline-grid;place-items:center;width:1.25em;height:1.25em;border-radius:50%;font-weight:900;font-size:.85em;line-height:1;margin-right:.3em;font-style:normal;background:var(--card);border:2px solid currentColor}
+.elabel.yn-yes .ynm{color:var(--ok-ink,#2f7d4f)}
+.elabel.yn-no .ynm{color:var(--bad,#b3261e);border-style:dashed}
+.frame.flonly .fl{max-width:calc(100% + 0px);overflow:hidden;text-overflow:ellipsis}

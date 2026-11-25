@@ -1,0 +1,9 @@
+{
+  "name": "flowmate",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "test": "node tools/build.mjs && python3 tests/run_all.py"
+  }
+}

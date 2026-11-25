@@ -21,7 +21,10 @@ Read `HANDOFF.md` for the full brief. This file covers how to work.
 
 ## Working rules
 
-- `app/index.html` is the source of truth until the build is set up.
+- **`src/` is the source of truth.** `npm run build` joins it into `dist/index.html` (one page, no dependencies).
+  - `src/shell.html` lists the parts in **load order**. Order matters: later parts reassign earlier functions.
+  - Never edit `dist/`. It is rebuilt every time and not committed.
+  - `python3 tests/run_all.py` (or `npm test`) builds first, then runs every suite.
 - Keep every existing feature. Don't redesign anything nobody asked for.
 - Run the test suites before and after every change batch. See section 9 of HANDOFF.md.
 - Every edit inside the app goes through `commit()`, so undo and the Activity log keep working.

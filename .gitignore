@@ -8,3 +8,4 @@ node_modules/
 *.keystore
 *.jks
 tests/*.png
+dist/

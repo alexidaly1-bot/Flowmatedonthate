@@ -1,6 +1,7 @@
 """Run every FlowMate test suite and fail if any check is false.
 
 Usage:  python3 tests/run_all.py [suite ...]
+Builds dist/index.html from src/ first.
 A check printed as `"name": false` is a failure, except the notes listed in
 NOTES (HANDOFF.md section 9 says these are information, not failures).
 """
@@ -27,7 +28,12 @@ def run(name):
                                     time.time() - t, ', '.join(bad)))
     return not bad
 
+def build():
+    # Always test a fresh build of src/, never a stale dist/index.html.
+    subprocess.run(['node', os.path.join(HERE, '..', 'tools', 'build.mjs')], check=True)
+
 if __name__ == '__main__':
+    build()
     names = sys.argv[1:] or SUITES
     results = [run(n) for n in names]
     print('\n%d/%d suites passed' % (sum(results), len(results)))

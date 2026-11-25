@@ -1,6 +1,6 @@
 import os as _os, pathlib as _pl
 _os.chdir(_os.path.dirname(_os.path.abspath(__file__)))
-APP=_pl.Path('../app/index.html').resolve().as_uri()
+APP=_pl.Path('../dist/index.html').resolve().as_uri()
 import json
 from playwright.sync_api import sync_playwright
 bm=open('fixtures/buttmate.json').read()

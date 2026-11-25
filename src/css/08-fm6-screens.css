@@ -1,0 +1,37 @@
+/* ===== FM6 screens: unfinished markers, free layout, layout editor ===== */
+.scr.undesigned .scr-body{background:repeating-linear-gradient(135deg,transparent 0 14px,color-mix(in srgb,var(--ap-line) 60%,transparent) 14px 16px)}
+.scr-todo{margin:auto;display:flex;flex-direction:column;gap:6px;align-items:center;text-align:center;padding:18px;border:2px dashed var(--ap-line);border-radius:12px;background:var(--ap-bg);color:var(--ap-text)}
+.scr-todo b{font-size:1.05em}.scr-todo span{opacity:.75;font-size:.85em}
+.sp.unnamed{outline:2px dashed color-mix(in srgb,var(--ap-text) 45%,transparent);outline-offset:2px}
+.sp.unnamed::after{content:"Needs a name";position:absolute;right:6px;top:-9px;font-size:9px;font-weight:700;background:var(--ap-bg);color:var(--ap-text);padding:0 4px;border-radius:4px;border:1px dashed currentColor;pointer-events:none}
+.scr-body.free{position:relative;display:block;padding:0;flex:1}
+.sp.fp{position:absolute;margin:0;box-sizing:border-box;overflow:hidden}
+.lay-stage .sp.fp.lay-sel{overflow:visible}
+.sp.fp.sp-tab{background:var(--ap-surface);border-bottom:3px solid var(--ap-line);border-radius:calc(var(--ap-r) * .4)}
+.sp.fp.sp-tab.on{border-bottom-color:var(--ap)}
+.sp.fp.sp-mi,.sp.fp.sp-link{display:flex;align-items:center;padding:0 12px}
+.sp.fp.sp-mi{background:var(--ap-surface)}
+.sp.fp.sp-btn,.sp.fp.sp-tab{display:flex;align-items:center;justify-content:center}
+#lay{position:fixed;inset:0;z-index:900;background:var(--bg,var(--canvas));display:flex;flex-direction:column}
+#lay[hidden]{display:none}
+.lay-top{display:flex;align-items:center;gap:8px;padding:8px 12px;border-bottom:1.5px solid var(--line);background:var(--bar,var(--card))}
+.lay-title{font-family:var(--font-display);font-size:1.05rem;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lay-main{flex:1;min-height:0;display:flex}
+.lay-stage{flex:1;min-width:0;overflow:auto;display:flex;align-items:flex-start;justify-content:center;padding:12px;background:var(--canvas)}
+.lay-fit{flex:none}
+.lay-dev{transform-origin:0 0;width:max-content}
+.lay-stage .sp{cursor:move;touch-action:none}
+.lay-stage .sp-port,.lay-stage .sp-bad{display:none}
+.lay-stage .sp.lay-sel{outline:3px solid var(--coral);outline-offset:2px;z-index:2}
+.lay-stage .sp.lay-moving{opacity:.85;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.lay-stage .lh{position:absolute;width:calc(22px * var(--hs,1));height:calc(22px * var(--hs,1));background:var(--coral);border:2px solid #fff;border-radius:50%;z-index:3;touch-action:none}
+.lay-stage .lh.se{right:2px;bottom:2px;cursor:nwse-resize}
+.lay-stage .lh.e{right:2px;top:calc(50% - 9px);cursor:ew-resize}
+.lay-stage .lh.s{bottom:2px;left:calc(50% - 9px);cursor:ns-resize}
+.lay-ren{position:absolute;inset:0;width:100%;height:100%;min-height:0;z-index:4;font:inherit;text-align:center}
+.lay-side{width:320px;flex:none;overflow:auto;padding:14px 16px;border-left:1.5px solid var(--line);background:var(--card)}
+.lay-side h3{margin:0 0 8px;font-family:var(--font-display)}
+.lay-parts{display:flex;flex-wrap:wrap;gap:6px}
+.lay-parts .tpart{cursor:pointer}
+.lay-btn{margin:0 0 10px}
+@media (max-width:760px){.lay-main{flex-direction:column}.lay-side{width:auto;max-height:42vh;border-left:0;border-top:1.5px solid var(--line)}}

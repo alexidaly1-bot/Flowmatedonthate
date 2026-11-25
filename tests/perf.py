@@ -1,9 +1,9 @@
 import os as _os, pathlib as _pl
 _os.chdir(_os.path.dirname(_os.path.abspath(__file__)))
-APP=_pl.Path('../app/index.html').resolve().as_uri()
+APP=_pl.Path('../dist/index.html').resolve().as_uri()
 import json,sys,os,time
 from playwright.sync_api import sync_playwright
-URL='file://'+_os.path.abspath(sys.argv[1] if len(sys.argv)>1 else '../app/index.html')
+URL='file://'+_os.path.abspath(sys.argv[1] if len(sys.argv)>1 else '../dist/index.html')
 OUT=sys.argv[2] if len(sys.argv)>2 else 'out/perf.json'
 N=int(os.environ.get('N','300'))
 R={'file_kb':round(os.path.getsize(URL[7:])/1024,1)}

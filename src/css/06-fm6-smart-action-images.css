@@ -1,0 +1,15 @@
+/* ===== FM6 Smart Action images ===== */
+.sa-att{margin-top:10px}
+.sa-att-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sa-att-h .help{flex:1;min-width:180px;margin:0}
+.sa-imgs{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.sa-img{display:grid;grid-template-columns:1fr auto;gap:4px;align-items:center;background:var(--row);border-radius:var(--r);padding:6px}
+.sa-thumb{grid-column:1/-1;border:0;padding:0;background:var(--card);border-radius:calc(var(--r) - 2px);overflow:hidden;height:92px;cursor:zoom-in}
+.sa-thumb img{width:100%;height:100%;object-fit:contain;display:block}
+.sa-il{min-height:36px;font-size:.85rem;padding:4px 8px}
+#sa-view{position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.72);display:grid;place-items:center;padding:16px}
+#sa-view[hidden]{display:none}
+#sa-view figure{margin:0;max-width:min(96vw,1100px);max-height:92vh;display:flex;flex-direction:column;gap:8px}
+#sa-view img{max-width:100%;max-height:80vh;object-fit:contain;border-radius:8px;background:#fff}
+#sa-view figcaption{display:flex;gap:10px;align-items:center;color:#fff;font-size:.95rem}
+#sa-view figcaption .btn{margin-left:auto}

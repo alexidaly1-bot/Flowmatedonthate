@@ -1,0 +1,37 @@
+/* ===== FM6 parts toolbar ===== */
+#tray.tray6{position:absolute;z-index:15;display:flex;gap:4px;align-items:stretch;padding:6px;overflow:hidden;max-height:none;max-width:none;left:auto;right:auto;top:auto;bottom:auto;transform:none;touch-action:none;background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow)}
+#tray.tray6[hidden]{display:none}
+#tray.tray6 .tray-bar{display:flex;gap:4px;flex:none}
+#tray.tray6 .tray-scroll{display:flex;gap:4px;overflow:auto;scrollbar-width:thin;min-width:0;min-height:0;flex:1;touch-action:none;overscroll-behavior:contain}
+.tray-ctl{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;min-width:40px;padding:0 10px;border:0;border-radius:var(--r);background:none;color:var(--ink);font:inherit;font-weight:700;font-size:.85rem;cursor:pointer;white-space:nowrap}
+.tray-ctl:hover{background:var(--row)}
+.tray-ctl .ic{width:18px;height:18px}
+.tray-ctl:focus-visible,.tpart:focus-visible{outline:3px solid var(--focus,var(--coral));outline-offset:1px}
+.tray-arr{display:none;font-size:.8rem;line-height:1;padding:0;min-width:32px;background:var(--row)}
+.tray-arr:disabled{opacity:.3;cursor:default}
+#tray.tray6.scrolls .tray-arr{display:inline-flex}
+#tray.tray6.folded .tray-scroll,#tray.tray6.folded .tray-arr,#tray.tray6.folded .tray-move{display:none!important}
+/* horizontal docks */
+#tray.tray6.dock-top,#tray.tray6.dock-bottom{flex-direction:row;left:16px;right:16px}
+#tray.tray6.dock-top{top:64px}
+#tray.tray6.dock-bottom{bottom:78px}
+#tray.tray6.dock-top.folded,#tray.tray6.dock-bottom.folded{right:auto}
+/* vertical docks */
+#tray.tray6.dock-left,#tray.tray6.dock-right{flex-direction:column;top:64px;max-height:calc(100% - 300px);width:auto}
+#tray.tray6.dock-left{left:16px}
+#tray.tray6.dock-right{right:16px;top:72px;max-height:calc(100% - 200px)}
+#tray.tray6.dock-left .tray-bar,#tray.tray6.dock-right .tray-bar{flex-direction:column}
+#tray.tray6.dock-left .tray-scroll,#tray.tray6.dock-right .tray-scroll{flex-direction:column}
+#tray.tray6.dock-left .tray-arr,#tray.tray6.dock-right .tray-arr{min-height:28px;width:100%;font-size:.8rem}
+#tray.tray6.dock-top .tray-arr,#tray.tray6.dock-bottom .tray-arr{font-size:.8rem}
+#tray.tray6 .tpart{flex:none}
+@media (max-width:760px){
+  #tray.tray6{padding:4px}
+  #tray.tray6.dock-top{top:66px;left:8px;right:8px}
+  #tray.tray6.dock-bottom{bottom:150px;left:8px;right:8px}
+  #tray.tray6.dock-left,#tray.tray6.dock-right{top:66px;max-height:calc(100% - 66px - 170px)}
+  #tray.tray6.dock-left{left:6px}#tray.tray6.dock-right{right:6px;top:120px;max-height:calc(100% - 120px - 170px)}
+  #tray.tray6.dock-left .tpart,#tray.tray6.dock-right .tpart{flex-direction:column;gap:2px;min-height:52px;width:62px;padding:6px 2px;font-size:.66rem;justify-content:center;text-align:center;white-space:normal;line-height:1.1}
+  #tray.tray6.dock-left .tray-ctl .tl,#tray.tray6.dock-right .tray-ctl .tl{font-size:.66rem}
+  #tray.tray6.dock-left .tray-fold,#tray.tray6.dock-right .tray-fold{flex-direction:column;gap:0;width:62px;padding:4px 2px}
+}
