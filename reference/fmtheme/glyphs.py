@@ -1,0 +1,22 @@
+from urllib.parse import quote
+G={
+'tick':"<path d='M4.5 12.5l5 5L19.5 6.5'/>",
+'tri':"<path d='M12 3.2 2.6 20.2h18.8z'/><path d='M12 9.5v5'/><path d='M12 17.4v.2'/>",
+'oct':"<path d='M8 2.8h8l5.2 5.2v8L16 21.2H8L2.8 16V8z'/><path d='M9 9l6 6M15 9l-6 6'/>",
+'tag':"<path d='M3 12.2V3.5h8.7L21 12.8 12.8 21z'/><circle cx='7.6' cy='7.8' r='1.1' fill='black'/>",
+'minus':"<circle cx='12' cy='12' r='8.6'/><path d='M8 12h8'/>",
+'nav':"<path d='M3.5 12h16M13.5 5.5 20 12l-6.5 6.5'/>",
+'fn':"<path d='M16.5 3.8c-2.8-.4-4.3 1-4.8 3.8L9.6 18.6c-.5 2.4-1.9 3.2-4.1 2.6'/><path d='M7.6 10h9'/>",
+'data':"<ellipse cx='12' cy='5.8' rx='7.2' ry='2.8'/><path d='M4.8 5.8v12.4c0 1.6 3.2 2.8 7.2 2.8s7.2-1.2 7.2-2.8V5.8'/><path d='M4.8 12c0 1.6 3.2 2.8 7.2 2.8s7.2-1.2 7.2-2.8'/>",
+'cond':"<path d='M12 2.6 21.4 12 12 21.4 2.6 12z'/>",
+'err':"<path d='M6 6l12 12M18 6 6 18'/>",
+'perm':"<rect x='4.8' y='10.4' width='14.4' height='10.4' rx='2'/><path d='M8 10.4V7.6a4 4 0 0 1 8 0v2.8'/>",
+'api':"<path d='M8 6.5 2.8 12 8 17.5M16 6.5l5.2 5.5-5.2 5.5M14 4l-4 16'/>",
+'ref':"<path d='M10.2 13.8a4.2 4.2 0 0 0 6 0l3.1-3.1a4.2 4.2 0 0 0-6-6l-1.2 1.2'/><path d='M13.8 10.2a4.2 4.2 0 0 0-6 0l-3.1 3.1a4.2 4.2 0 0 0 6 6l1.2-1.2'/>",
+}
+out=[]
+for k,v in G.items():
+  svg="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'>"+v+"</svg>"
+  out.append('--g-'+k+':url("data:image/svg+xml,'+quote(svg,safe="=:/' ")+'");')
+open('glyphs.css','w').write(':root{'+''.join(out)+'}\n')
+print(len(open('glyphs.css').read()))

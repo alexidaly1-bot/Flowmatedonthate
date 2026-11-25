@@ -1,0 +1,40 @@
+{
+ "file_kb": 565.0,
+ "load_ms": 161,
+ "nav_dcl_ms": 125,
+ "idle_sample": {
+  "heap_mb": 2.19,
+  "nodes": 2540,
+  "listeners": 66
+ },
+ "entities": 334,
+ "large": {
+  "renderCanvas_blocks_ms": 15.99,
+  "select_ms": 36.15,
+  "applyView_pan_ms": 0.01,
+  "commit_ms": 59.58,
+  "json_kb": 178.5,
+  "saveLocal_ms": 1.12,
+  "prompt_kchars": 78.3,
+  "prompt_card_kchars": 5.7,
+  "pan_frame_p50_ms": 16.7,
+  "pan_frame_p95_ms": 16.8,
+  "zoom_levels_ms": 138.37,
+  "mounted_cards": 156,
+  "live_dom": 7938,
+  "metrics": {
+   "heap_mb": 6.06,
+   "nodes": 15102,
+   "listeners": 66
+  },
+  "renderCanvas_screens_ms": 11.92,
+  "metrics_screens": {
+   "heap_mb": 5.79,
+   "nodes": 6951,
+   "listeners": 66
+  },
+  "undo_stack_mb": 2.13,
+  "reload_large_ms": 301
+ },
+ "errors": []
+}

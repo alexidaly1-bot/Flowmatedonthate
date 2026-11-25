@@ -1,0 +1,9 @@
+# Test output (regenerated every run). Keep the two perf baselines.
+tests/out/*
+!tests/out/perf_before_v5.json
+!tests/out/perf_after_v6.json
+__pycache__/
+node_modules/
+.env
+*.keystore
+*.jks

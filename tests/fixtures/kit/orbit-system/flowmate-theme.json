@@ -1,0 +1,133 @@
+{
+  "name": "Orbit System",
+  "mood": "Futuristic instrument panel, electric cyan and ultraviolet.",
+  "colourblindChecked": "Machado 100% severity simulation: protanopia, deuteranopia, tritanopia; numerical sRGB/CIELAB palette check, not a human or rendered-interface test. Link/status labels, symbols and patterns required. See validation report for minimum pair distances.",
+  "fonts": {
+    "display": {
+      "family": "Space Grotesk",
+      "weights": [
+        700,
+        800
+      ],
+      "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;800&display=swap"
+    },
+    "body": {
+      "family": "Sora",
+      "weights": [
+        400,
+        600,
+        700
+      ],
+      "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap"
+    },
+    "baseSizePx": 16,
+    "lineHeight": 1.45,
+    "letterSpacingEm": 0
+  },
+  "shape": {
+    "radiusSmallPx": 3,
+    "radiusPx": 8,
+    "radiusLargePx": 13,
+    "borderWidthPx": 1,
+    "shadowStyle": "flat"
+  },
+  "light": {
+    "canvas": "#F1F4FA",
+    "card": "#FFFFFF",
+    "bar": "#E9EDF8",
+    "row": "#FAFBFD",
+    "rowHot": "#E9E4F6",
+    "ink": "#101729",
+    "ink2": "#38445D",
+    "line": "#777777",
+    "dot": "#C0C3CC",
+    "shadow": "#615B55",
+    "primary": "#5731BA",
+    "primaryFill": "#E9E4F6",
+    "primaryText": "#5731BA",
+    "onPrimary": "#FFFFFF",
+    "accent": "#00647D",
+    "accentFill": "#E0ECEF",
+    "onAccent": "#FFFFFF",
+    "soft": "#EDF4F6",
+    "neutralWarm": "#E2E6F1",
+    "okBg": "#EAF3F2",
+    "okInk": "#16766D",
+    "warnBg": "#F4EFE8",
+    "warnInk": "#875200",
+    "badBg": "#F7EBED",
+    "badInk": "#A31D39",
+    "pinkBg": "#F4EDF4",
+    "pinkInk": "#823B80",
+    "greyBg": "#EEEEEF",
+    "greyInk": "#45474D",
+    "links": {
+      "navigate": "#2222FF",
+      "function": "#661100",
+      "data": "#9900BB",
+      "condition": "#000044",
+      "error": "#BB3300",
+      "permission": "#554477",
+      "api": "#226655",
+      "reference": "#330011"
+    },
+    "modules": [
+      "#E0F5FA",
+      "#EFE7FC",
+      "#F0F3D8",
+      "#F8E8F4",
+      "#E5EDF9",
+      "#E8EAF0"
+    ]
+  },
+  "dark": {
+    "canvas": "#080E14",
+    "card": "#121B27",
+    "bar": "#111723",
+    "row": "#0E1620",
+    "rowHot": "#10323F",
+    "ink": "#F3F7FF",
+    "ink2": "#C3D3E3",
+    "line": "#7C7C7C",
+    "dot": "#3C4148",
+    "shadow": "#080A10",
+    "primary": "#00D9F2",
+    "primaryFill": "#10323F",
+    "primaryText": "#00D9F2",
+    "onPrimary": "#000000",
+    "accent": "#CBF85A",
+    "accentFill": "#28362D",
+    "onAccent": "#000000",
+    "soft": "#1F2A2B",
+    "neutralWarm": "#283043",
+    "okBg": "#1E373D",
+    "okInk": "#70F2D1",
+    "warnBg": "#313332",
+    "warnInk": "#FFD17C",
+    "badBg": "#312936",
+    "badInk": "#FF879B",
+    "pinkBg": "#2E2F43",
+    "pinkInk": "#E8B5FF",
+    "greyBg": "#28303C",
+    "greyInk": "#B8BEC8",
+    "links": {
+      "navigate": "#22AAFF",
+      "function": "#CC9955",
+      "data": "#EEBBEE",
+      "condition": "#AAFF77",
+      "error": "#FF8811",
+      "permission": "#99AA99",
+      "api": "#55FFAA",
+      "reference": "#FFFFFF"
+    },
+    "modules": [
+      "#102C36",
+      "#28213E",
+      "#28321C",
+      "#34223A",
+      "#172B42",
+      "#252B35"
+    ]
+  },
+  "notes": "Use the matching layout and visual direction in IMPLEMENTATION.md. No botanical imagery. Use filled or clearly visible icons with labels, explicit link patterns and status icons. Apply all tokens consistently; do not claim full WCAG conformance until rendered UI is tested."
+}
