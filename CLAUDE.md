@@ -25,6 +25,9 @@ Read `HANDOFF.md` for the full brief. This file covers how to work.
   - `src/shell.html` lists the parts in **load order**. Order matters: later parts reassign earlier functions.
   - Never edit `dist/`. It is rebuilt every time and not committed.
   - `python3 tests/run_all.py` (or `npm test`) builds first, then runs every suite.
+- **Platform shim:** `src/js/platform.js` defines `window.claude.use()` when FlowMate runs outside Claude.
+  - Free, this-device-only version for now: voice input via the browser; AI, cloud and team features return `null` and stay hidden.
+  - A paid AI proxy or backend needs Alex's OK first (HANDOFF.md section 4).
 - Keep every existing feature. Don't redesign anything nobody asked for.
 - Run the test suites before and after every change batch. See section 9 of HANDOFF.md.
 - Every edit inside the app goes through `commit()`, so undo and the Activity log keep working.
