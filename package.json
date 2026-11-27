@@ -7,10 +7,12 @@
     "test": "node tools/build.mjs && python3 tests/run_all.py"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "1.14.0",
     "@capacitor/android": "7.6.11",
     "@capacitor/core": "7.6.11"
   },
   "devDependencies": {
-    "@capacitor/cli": "7.6.11"
+    "@capacitor/cli": "7.6.11",
+    "esbuild": "0.28.2"
   }
 }

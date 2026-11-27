@@ -9,7 +9,7 @@ import os, re, subprocess, sys, time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SUITES = ['test', 'satest', 'saimg', 'lptest', 'p5test', 'themetest',
-          'logtest', 'laytest', 'tray6', 'bug2', 'platformtest']
+          'logtest', 'laytest', 'tray6', 'bug2', 'platformtest', 'aitest']
 NOTES = {'rest', 'scrolls'}
 FALSE = re.compile(r'"([^"]+)"\s*:\s*false')
 
