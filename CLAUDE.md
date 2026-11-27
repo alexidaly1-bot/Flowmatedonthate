@@ -26,8 +26,10 @@ Read `HANDOFF.md` for the full brief. This file covers how to work.
   - Never edit `dist/`. It is rebuilt every time and not committed.
   - `python3 tests/run_all.py` (or `npm test`) builds first, then runs every suite.
 - **Platform shim:** `src/js/platform.js` defines `window.claude.use()` when FlowMate runs outside Claude.
-  - Free, this-device-only version for now: voice input via the browser; AI, cloud and team features return `null` and stay hidden.
-  - A paid AI proxy or backend needs Alex's OK first (HANDOFF.md section 4).
+  - Voice input via the browser. Cloud and team features return `null` and stay hidden.
+  - **AI uses Alex's own Anthropic API key**, typed into Smart Action > AI key and kept only in that device's localStorage (`fm.ai`). Alex chose this over a server proxy. Never put a key in code, tests, the repo or project data.
+  - The official Anthropic SDK is bundled by `tools/build.mjs` (esbuild) into `src/gen/` (not committed). Run `npm ci` first.
+  - A backend or AI proxy needs Alex's OK first (HANDOFF.md section 4).
 - Keep every existing feature. Don't redesign anything nobody asked for.
 - Run the test suites before and after every change batch. See section 9 of HANDOFF.md.
 - Every edit inside the app goes through `commit()`, so undo and the Activity log keep working.

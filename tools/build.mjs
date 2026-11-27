@@ -15,6 +15,23 @@ const args = process.argv.slice(2);
 const outArg = args.indexOf('--out');
 const out = resolve(root, outArg >= 0 ? args[outArg + 1] : 'dist/index.html');
 
+// Generated parts: the official Anthropic SDK, bundled for the browser.
+// Written to src/gen/ (not committed) before the parts are joined.
+async function bundleSdk() {
+  const { build } = await import('esbuild');
+  await build({
+    entryPoints: [join(root, 'src/ai/sdk-entry.mjs')],
+    outfile: join(src, 'gen/anthropic-sdk.js'),
+    bundle: true, minify: true, format: 'iife', platform: 'browser',
+    target: ['chrome100'], legalComments: 'none', logLevel: 'warning',
+  });
+  // Every part must end with a newline so includes join cleanly.
+  const f = join(src, 'gen/anthropic-sdk.js');
+  const t = readFileSync(f, 'utf8');
+  if (!t.endsWith('\n')) writeFileSync(f, t + '\n');
+}
+await bundleSdk();
+
 const INCLUDE = /^<!--#include ([\w./-]+)-->$/;
 const seen = new Set();
 const lines = readFileSync(join(src, 'shell.html'), 'utf8').split('\n');
