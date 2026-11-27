@@ -1,0 +1,8 @@
+{
+  "appId": "app.flowmate.planner",
+  "appName": "FlowMate",
+  "webDir": "dist",
+  "android": {
+    "allowMixedContent": false
+  }
+}
