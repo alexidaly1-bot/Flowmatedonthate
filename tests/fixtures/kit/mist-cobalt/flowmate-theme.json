@@ -1,0 +1,133 @@
+{
+  "name": "Mist Cobalt",
+  "mood": "Calm, polished product studio with soft modular panels.",
+  "colourblindChecked": "Machado 100% severity simulation: protanopia, deuteranopia, tritanopia; numerical sRGB/CIELAB palette check, not a human or rendered-interface test. Link/status labels, symbols and patterns required. See validation report for minimum pair distances.",
+  "fonts": {
+    "display": {
+      "family": "Manrope",
+      "weights": [
+        700,
+        800
+      ],
+      "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap"
+    },
+    "body": {
+      "family": "Nunito Sans",
+      "weights": [
+        400,
+        600,
+        700
+      ],
+      "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+    },
+    "baseSizePx": 16,
+    "lineHeight": 1.45,
+    "letterSpacingEm": 0
+  },
+  "shape": {
+    "radiusSmallPx": 6,
+    "radiusPx": 12,
+    "radiusLargePx": 20,
+    "borderWidthPx": 1,
+    "shadowStyle": "soft"
+  },
+  "light": {
+    "canvas": "#EBF2F6",
+    "card": "#FFFFFF",
+    "bar": "#E2EBF2",
+    "row": "#F8FAFC",
+    "rowHot": "#E0E7F4",
+    "ink": "#182535",
+    "ink2": "#40556A",
+    "line": "#777777",
+    "dot": "#BDC5CC",
+    "shadow": "#615B55",
+    "primary": "#0E43A9",
+    "primaryFill": "#E0E7F4",
+    "primaryText": "#0E43A9",
+    "onPrimary": "#FFFFFF",
+    "accent": "#B43B25",
+    "accentFill": "#F6E7E5",
+    "onAccent": "#FFFFFF",
+    "soft": "#FAF1F0",
+    "neutralWarm": "#E5EAF1",
+    "okBg": "#EAF3F2",
+    "okInk": "#16766D",
+    "warnBg": "#F4EFE8",
+    "warnInk": "#875200",
+    "badBg": "#F7EBED",
+    "badInk": "#A31D39",
+    "pinkBg": "#F4EDF4",
+    "pinkInk": "#823B80",
+    "greyBg": "#EEEEEF",
+    "greyInk": "#45474D",
+    "links": {
+      "navigate": "#2222FF",
+      "function": "#661100",
+      "data": "#9900BB",
+      "condition": "#000044",
+      "error": "#BB3300",
+      "permission": "#554477",
+      "api": "#226655",
+      "reference": "#330011"
+    },
+    "modules": [
+      "#DEEDFD",
+      "#FBE6E2",
+      "#EDE6FC",
+      "#E2F3EB",
+      "#F9EED7",
+      "#E5EDF7"
+    ]
+  },
+  "dark": {
+    "canvas": "#0F172A",
+    "card": "#1E293B",
+    "bar": "#19263A",
+    "row": "#192335",
+    "rowHot": "#2A3A53",
+    "ink": "#F8FAFC",
+    "ink2": "#CBD8E8",
+    "line": "#858585",
+    "dot": "#424958",
+    "shadow": "#080A10",
+    "primary": "#83B5FF",
+    "primaryFill": "#2A3A53",
+    "primaryText": "#83B5FF",
+    "onPrimary": "#000000",
+    "accent": "#FFA38B",
+    "accentFill": "#393845",
+    "onAccent": "#000000",
+    "soft": "#2E3241",
+    "neutralWarm": "#303C50",
+    "okBg": "#29434E",
+    "okInk": "#70F2D1",
+    "warnBg": "#3B3F43",
+    "warnInk": "#FFD17C",
+    "badBg": "#3B3547",
+    "badInk": "#FF879B",
+    "pinkBg": "#383B54",
+    "pinkInk": "#E8B5FF",
+    "greyBg": "#323C4D",
+    "greyInk": "#B8BEC8",
+    "links": {
+      "navigate": "#22AAFF",
+      "function": "#CC9955",
+      "data": "#EEBBEE",
+      "condition": "#AAFF77",
+      "error": "#FF8811",
+      "permission": "#99AA99",
+      "api": "#55FFAA",
+      "reference": "#FFFFFF"
+    },
+    "modules": [
+      "#203A53",
+      "#3C2C36",
+      "#322B4B",
+      "#203B38",
+      "#3A3328",
+      "#24334C"
+    ]
+  },
+  "notes": "Use the matching layout and visual direction in IMPLEMENTATION.md. No botanical imagery. Use filled or clearly visible icons with labels, explicit link patterns and status icons. Apply all tokens consistently; do not claim full WCAG conformance until rendered UI is tested."
+}

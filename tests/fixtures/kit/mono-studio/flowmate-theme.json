@@ -1,0 +1,133 @@
+{
+  "name": "Mono Studio",
+  "mood": "Professional desktop workbench, compact and distraction-free.",
+  "colourblindChecked": "Machado 100% severity simulation: protanopia, deuteranopia, tritanopia; numerical sRGB/CIELAB palette check, not a human or rendered-interface test. Link/status labels, symbols and patterns required. See validation report for minimum pair distances.",
+  "fonts": {
+    "display": {
+      "family": "Plus Jakarta Sans",
+      "weights": [
+        700,
+        800
+      ],
+      "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&display=swap"
+    },
+    "body": {
+      "family": "IBM Plex Sans",
+      "weights": [
+        400,
+        600,
+        700
+      ],
+      "googleFontsUrl": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap"
+    },
+    "baseSizePx": 16,
+    "lineHeight": 1.45,
+    "letterSpacingEm": 0
+  },
+  "shape": {
+    "radiusSmallPx": 3,
+    "radiusPx": 6,
+    "radiusLargePx": 10,
+    "borderWidthPx": 1,
+    "shadowStyle": "flat"
+  },
+  "light": {
+    "canvas": "#F7F6F3",
+    "card": "#FFFFFF",
+    "bar": "#EAE8E5",
+    "row": "#FCFCFB",
+    "rowHot": "#F4E7DF",
+    "ink": "#1F2328",
+    "ink2": "#46505B",
+    "line": "#777777",
+    "dot": "#C7C8C6",
+    "shadow": "#615B55",
+    "primary": "#A74308",
+    "primaryFill": "#F4E7DF",
+    "primaryText": "#A74308",
+    "onPrimary": "#FFFFFF",
+    "accent": "#48566B",
+    "accentFill": "#E9EBED",
+    "onAccent": "#FFFFFF",
+    "soft": "#F2F3F5",
+    "neutralWarm": "#E8E2D9",
+    "okBg": "#EAF3F2",
+    "okInk": "#16766D",
+    "warnBg": "#F4EFE8",
+    "warnInk": "#875200",
+    "badBg": "#F7EBED",
+    "badInk": "#A31D39",
+    "pinkBg": "#F4EDF4",
+    "pinkInk": "#823B80",
+    "greyBg": "#EEEEEF",
+    "greyInk": "#45474D",
+    "links": {
+      "navigate": "#2222FF",
+      "function": "#661100",
+      "data": "#9900BB",
+      "condition": "#000044",
+      "error": "#BB3300",
+      "permission": "#554477",
+      "api": "#226655",
+      "reference": "#330011"
+    },
+    "modules": [
+      "#E8EDF3",
+      "#F7EBDD",
+      "#EBEFF0",
+      "#EDE9F3",
+      "#E5EFE8",
+      "#ECEBE7"
+    ]
+  },
+  "dark": {
+    "canvas": "#111316",
+    "card": "#1B1D21",
+    "bar": "#24272D",
+    "row": "#181A1D",
+    "rowHot": "#362E2B",
+    "ink": "#F5F5F5",
+    "ink2": "#C9D0D8",
+    "line": "#818181",
+    "dot": "#434547",
+    "shadow": "#080A10",
+    "primary": "#FFAC76",
+    "primaryFill": "#362E2B",
+    "primaryText": "#FFAC76",
+    "onPrimary": "#000000",
+    "accent": "#B1C2D9",
+    "accentFill": "#2D3137",
+    "onAccent": "#000000",
+    "soft": "#26292E",
+    "neutralWarm": "#393733",
+    "okBg": "#263938",
+    "okInk": "#70F2D1",
+    "warnBg": "#39342D",
+    "warnInk": "#FFD17C",
+    "badBg": "#392B31",
+    "badInk": "#FF879B",
+    "pinkBg": "#36313E",
+    "pinkInk": "#E8B5FF",
+    "greyBg": "#2F3237",
+    "greyInk": "#B8BEC8",
+    "links": {
+      "navigate": "#22AAFF",
+      "function": "#CC9955",
+      "data": "#EEBBEE",
+      "condition": "#AAFF77",
+      "error": "#FF8811",
+      "permission": "#99AA99",
+      "api": "#55FFAA",
+      "reference": "#FFFFFF"
+    },
+    "modules": [
+      "#232D3A",
+      "#372A21",
+      "#252C30",
+      "#302B3B",
+      "#26332D",
+      "#303033"
+    ]
+  },
+  "notes": "Use the matching layout and visual direction in IMPLEMENTATION.md. No botanical imagery. Use filled or clearly visible icons with labels, explicit link patterns and status icons. Apply all tokens consistently; do not claim full WCAG conformance until rendered UI is tested."
+}

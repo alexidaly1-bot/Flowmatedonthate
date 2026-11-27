@@ -1,0 +1,25 @@
+/* ===== FM6 activity log ===== */
+.obj-box{background:var(--row);border-radius:var(--r-lg);padding:10px 12px;margin-bottom:12px}
+.obj-on,.obj-new{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.obj-on .inp,.obj-new .inp{flex:1;min-width:160px}
+.obj-on .flabel{margin:0;width:100%}
+.act-seg{margin-bottom:12px}
+.act-seg button{flex:1}
+.act-list,.act-list ol{list-style:none;margin:0;padding:0}
+.act-grp{margin-bottom:12px}
+.act-grp.has-obj{border-left:4px solid var(--coral);padding-left:10px}
+.obj-h{display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap}
+.obj-h .flabel{margin:0}
+.obj-rn{flex:1;min-width:140px;min-height:36px;font-weight:700}
+.act-i{padding:10px 0;border-bottom:1px solid var(--line);line-height:1.55}
+.act-top{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.act-top time{font-size:.8rem;color:var(--ink-2);min-width:7.5em}
+.act-top b{flex-basis:100%}
+.act-ch{list-style:none;margin:6px 0 0;padding:0;font-size:.88rem}
+.act-ch li{padding:2px 0}
+.act-ch .opw{font-weight:700}
+.act-ch .op-removed .opw,.act-ch .op-disconnected .opw{text-decoration:underline;text-decoration-style:dotted}
+.act-ch small{color:var(--ink-2)}
+.act-ch .more summary{cursor:pointer;color:var(--ink-2)}
+.reason .why-ai,.reason p{margin:6px 0 0}
+.reason .none{color:var(--ink-2);font-style:italic}
